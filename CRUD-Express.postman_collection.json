@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CRUD-Express",
+		"_postman_id": "6449d53e-b9bb-1d17-fa09-8fd5d5b1d112",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Feed Data",
+			"request": {
+				"url": "http://localhost:9090/aliens",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"DC6\",\n\t\"tech\": \"C#\"\n}"
+				},
+				"description": "Feed Data"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Data",
+			"request": {
+				"url": "http://localhost:9090/aliens",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data by Id",
+			"request": {
+				"url": "http://localhost:9090/aliens/610a39db265d3550c058f1f3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data by Id",
+			"request": {
+				"url": "http://localhost:9090/aliens/610a39db265d3550c058f1f3",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sub\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data by Id",
+			"request": {
+				"url": "http://localhost:9090/aliens/6102a9528605e827f0638840",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
